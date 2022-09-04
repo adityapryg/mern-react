@@ -1,6 +1,6 @@
 import React from "react";
 import TodoItem from "./TodoItem";
-
+import Button from "../../shared/UIEelements/Button";
 import './TodoList.css';
 
 const TodoList = props => {
@@ -16,6 +16,9 @@ const TodoList = props => {
     return (
         <div>
             <h2 className="center">Todolist</h2>
+            {
+                <Button to="/tambah"> Tambah Todo </Button>
+            }
             <ul className="todo-list">
                 {props.items.map(todo => {
                     return <TodoItem 
