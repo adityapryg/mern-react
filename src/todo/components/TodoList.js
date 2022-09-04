@@ -16,9 +16,7 @@ const TodoList = props => {
     return (
         <div>
             <h2 className="center">Todolist</h2>
-            {
-                <Button to="/tambah"> Tambah Todo </Button>
-            }
+            <Button to="/tambah"> Tambah Todo </Button>
             <ul className="todo-list">
                 {props.items.map(todo => {
                     return <TodoItem 
