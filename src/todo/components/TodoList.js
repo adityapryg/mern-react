@@ -14,15 +14,18 @@ const TodoList = props => {
     }
 
     return (
-        <ul className="todo-list">
-            {props.items.map(todo => {
-                return <TodoItem 
-                    key={todo.id}
-                    title={todo.title}
-                    description={todo.description}
-                />
-            })}
-        </ul>
+        <div>
+            <h2 className="center">Todolist</h2>
+            <ul className="todo-list">
+                {props.items.map(todo => {
+                    return <TodoItem 
+                        key={todo.id}
+                        title={todo.title}
+                        description={todo.description}
+                    />
+                })}
+            </ul>
+        </div>
     )
 }
 
